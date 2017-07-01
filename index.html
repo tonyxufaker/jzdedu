@@ -10,6 +10,7 @@
     <meta name="description" content="Ethanol is an Agency and Personal Portfolio Template built with bootstrap 3.3.2. This is created for a cause to support my uncle's campaign. Go and Donate at -">
     <meta name="keywords" content="portfolio, agency, bootstrap theme, mobile responsive, template, personal">
     <meta name="author" content="ThemeForces.Com">
+      <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     
     <!-- Favicons
     ================================================== -->
@@ -378,50 +379,25 @@
                                 <h4>手机：13373649964</h4>
                             </div>
                         </div>
-						<div style="width:800px;height:500px;margin:0 auto">
-						<script type="text/javascript" src="http://webapi.amap.com/maps?v=1.3&key=4d6a2fa38dc5a8137592fa1608960791"></script> 
-  <script type="text/javascript">
-  var map = new AMap.Map('container');
-	map.setZoom(17);
-	map.setCenter([120.325363,31.586663]);
-	var marker = new AMap.Marker({
-    position: [120.325224, 31.586099],//marker所在的位置
-    map:map//创建时直接赋予map属性
-	});
-  </script>
-						</div>
-
                     </div> <!-- end nested row -->
                 </div> <!-- end col 10 with offset 1 to centered -->
             </div><!-- end outer row -->
-
-            <div class="row text-center"> <!-- contact form outer row with centered text-->
-                <div class="col-md-10 col-md-offset-1"> <!-- col 10 with offset 1 to centered -->
-                    <form id="contact-form" class="form" name="sentMessage" novalidate> <!-- form wrapper -->
-
-                        <div class="row"> <!-- nested inner row -->
-
-                           
-
-                           
-
-                            
-
-                          
-
-                         
-
-                        
-
-                        
-                        
-
-                    </form><!-- end form wrapper -->
-                </div><!-- end col 10 with offset 1 to centered -->
-            </div> <!-- end contact form outer row with centered text-->
-        </div><!-- end container -->
-
     </div>
+        <div id="gaode" style="width:800px;height:500px;margin:0 auto">
+            <script type="text/javascript" src="http://webapi.amap.com/maps?v=1.3&key=4d6a2fa38dc5a8137592fa1608960791"></script>
+            <script type="text/javascript">
+                var map = new AMap.Map('gaode', {
+                    mapStyle: 'amap://styles/macaron'//地图样式为马卡龙
+                });
+                map.setZoom(17);
+                map.setCenter([120.325363,31.586663]);
+                var marker = new AMap.Marker({
+                    position: [120.325224, 31.586099],//marker所在的位置
+                    map:map//创建时直接赋予map属性
+                });
+            </script>
+        </div>
+        <div style="width: 0px;height: 100px"></div>
 
     <!-- Footer 
     ================================================== -->
